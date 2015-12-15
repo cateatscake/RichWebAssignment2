@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+ 
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+    <title>AngularJS & Firebase Web App</title>
+ 
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/examples/signin/signin.css" rel="stylesheet">
+ 
+    <link href="https://getbootstrap.com/examples/justified-nav/justified-nav.css" rel="stylesheet">
+ 
+</head>
+ 
+<body>
+ 
+    <div class="container">
+		<div class = "login-area">
+            <h2>Login</h2>
+			
+			<form class="form-signin" role="form">
+				<input type="email" class="login-input-area form-control" ng-model="userEmail" placeholder="Email address" required="" autofocus="">
+				<input type="password" class="login-input-area form-control" ng-model="userPassword" placeholder="Password" required="">
+        
+				<button class="btn btn-lg login-btn" ng-click="loginUser()">Login</button>
+				<button class="btn btn-lg login-btn" ng-click="signUpUser()">Sign Up</button>
+			</form>
+		</div>
+ 
+    </div>
+ 
+   
+ 
+</body>
+</html>

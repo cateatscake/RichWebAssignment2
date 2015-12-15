@@ -1,0 +1,43 @@
+<body class = "bg-1">
+<div class = 'container'>
+	<div class="alert alert-success" role="alert">
+			Login Successful. Welcome <strong>{{userEmail}}</strong>
+	</div>
+	<div class = 'post-list'>
+
+		<div class = "board-header">
+			<h2>MessageBoard</h2>
+			<!--<h3>Click a post below to read more</h3>-->
+		</div>
+	
+		<button class = "btn new-post-btn" ng-click="newPost()">Add New Post</button>
+		
+		<div class = 'create-new-post-area'>
+			<div>
+				<label for='titleInput' class="title-input">Title:</label>
+				<input type="text" id="titleInput" placeholder="Title of post..." required="" autofocus="">
+			</div>
+			<div>
+				<label for='postInput' class="title-input">Post Content:</label>
+			</div>
+			<div>
+				<textarea id='postInput' placeholder='Type post here...' required=""></textarea>
+			</div>
+			<footer>
+				<button type="submit" id ="createPost" class = "create-post-btn btn">Create</button>
+				<button id ="cancelPost" class = "create-post-btn btn">Cancel</button>
+			</footer>
+
+		</div>
+		
+		<!--Posts are put here, individual posts in the 'post' div-->
+		<div class = 'posts'>
+			<header>User Posts:</header>
+			<div id = "post"></div>
+		</div>
+	</div>
+</div>
+</body>	
+	
+
+
